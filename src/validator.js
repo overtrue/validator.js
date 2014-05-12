@@ -1,4 +1,21 @@
+/**
+ * mod-validator
+ *
+ * @author  Joy <anzhengchao@gmail.com>
+ * @link    https://github.com/joychao/mod-validator
+ * @version 0.0.3
+ * @license MIT
+ */
 
+/**
+ * mod-validator
+ *
+ * @param {Object} data          
+ * @param {Object} validateRules
+ * @param {Object} messages
+ *
+ * @return {Void}
+ */
 (function(data, validateRules, messages){
 
   /**

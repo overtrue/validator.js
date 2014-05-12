@@ -1,6 +1,6 @@
 {
   "name": "mod-validator",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "a js validation module inspired by laravel validation.",
   "main": "src/validator.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/joychao/validator.js.git"
+    "url": "https://github.com/joychao/mod-validator.git"
   },
   "keywords": [
     "validation",
@@ -17,7 +17,7 @@
   "author": "Joy",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/joychao/validator.js/issues"
+    "url": "https://github.com/joychao/mod-validator/issues"
   },
-  "homepage": "https://github.com/joychao/validator.js"
+  "homepage": "https://github.com/joychao/mod-validator"
 }
