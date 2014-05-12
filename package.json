@@ -1,0 +1,23 @@
+{
+  "name": "mod-validator",
+  "version": "0.0.1",
+  "description": "a js validation module inspired by laravel validation.",
+  "main": "src/validator.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/joychao/validator.js.git"
+  },
+  "keywords": [
+    "validation",
+    "laravel"
+  ],
+  "author": "Joy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/joychao/validator.js/issues"
+  },
+  "homepage": "https://github.com/joychao/validator.js"
+}
