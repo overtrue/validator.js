@@ -1,4 +1,4 @@
-validator.js
+mod-validator [Development in progress！！！！]
 ============
 
 a js validation module inspired by laravel validation.
