@@ -12,9 +12,9 @@ $ npm install mod-validator
 # Basic
 ```javascript
 var rules = {
-    username: 'required|min:5',
-    password: 'required|confirmed|min:6|max:16',
-  }
+  username: 'required|min:5',
+  password: 'required|confirmed|min:6|max:16',
+}
 
   var data = {
     username: 'test',
@@ -28,6 +28,49 @@ var rules = {
   }
 ```
 
+# custom
+- ## custom message
+
+```
+var messages = {
+   required: ':attribute 不能为空.',
+   // ...
+}
+...
+v = validator.make(data, rules);
+v.mergeMessage(messages);
+if(v.fails()) {
+  console.log(v.messages);
+}
+
+//------------------------------------------
+
+v.mergeMessage({required: ':attribute 不能为空.'}) == v.mergeMessage('required', ':attribute 不能为空.');
+```
+
+```
+
+- ## custom attribute alias
+
+```javascript
+var attributes = {
+   username: '用户名',
+   password: '密码'
+   //...
+}
+v = validator.make(data, rules);
+v.mergeAttribute(messages);
+if(v.fails()) {
+  console.log(v.messages);
+}
+
+//------------------------------------------
+
+v.mergeAttribute({username: '用户名'}) == v.mergeAttribute('username', '用户名');
+```
+
+- ## custom value alias
+//TODO
 
 #License
 
