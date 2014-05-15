@@ -29,7 +29,7 @@ var rules = {
 ```
 
 # custom
-- ## custom message
+###custom message
 
 ```
 var messages = {
@@ -48,9 +48,8 @@ if(v.fails()) {
 v.mergeMessage({required: ':attribute 不能为空.'}) == v.mergeMessage('required', ':attribute 不能为空.');
 ```
 
-```
 
-- ## custom attribute alias
+### custom attribute alias
 
 ```javascript
 var attributes = {
@@ -69,7 +68,7 @@ if(v.fails()) {
 v.mergeAttribute({username: '用户名'}) == v.mergeAttribute('username', '用户名');
 ```
 
-- ## custom value alias
+###custom value alias
 //TODO
 
 #License
