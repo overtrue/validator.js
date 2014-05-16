@@ -3,14 +3,15 @@ mod-validator [![Build Status](https://travis-ci.org/joychao/mod-validator.png)]
 
 一个类似laravel的验证模块.
 
-# 安装
+## 安装
 
 ```javascript
 $ npm install mod-validator
 ```
 
-# 基本用法
+## 基本用法
 ```javascript
+var Validator = require("validator");
 var rules = {
   username: 'required|min:5',
   password: 'required|confirmed|min:6|max:16',
@@ -21,14 +22,14 @@ var data = {
   password: '123456',
 }
 
-v = validator.make(data, rules);
+var v = Validator.make(data, rules); // 或者: var  v = new Validator(data, rules)
 
 if(v.fails()) {
   console.log(v.messages);
 }
 ```
 
-## 定义验证规则
+### 定义验证规则
   - "|" 分隔的字符串形式
   ```javascript
   var rules = {
@@ -47,7 +48,7 @@ if(v.fails()) {
   }
   ```
 
-# API
+### API
  - 获取验证结果
    + 语法：
      + `{Boolean}` Validator.passes() 是否通过
