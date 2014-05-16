@@ -1,7 +1,7 @@
 mod-validator [![Build Status](https://travis-ci.org/joychao/mod-validator.png)](https://travis-ci.org/joychao/mod-validator)
 ============
 
-一个类似laravel的验证模块.
+一个类似laravel的js验证模块.
 
 ## 安装
 
