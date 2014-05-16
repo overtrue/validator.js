@@ -1,4 +1,4 @@
-mod-validator
+mod-validator [![Build Status](https://travis-ci.org/joychao/mod-validator.png)](https://travis-ci.org/joychao/mod-validator)
 ============
 
 a js validation module inspired by laravel validation.
