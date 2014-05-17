@@ -25,7 +25,9 @@ var data = {
 var v = Validator.make(data, rules); // 或者: var  v = new Validator(data, rules)
 
 if(v.fails()) {
-  console.log(v.messages);
+  console.log(v.messages());
+  //or
+  console.log(v.errors());
 }
 ```
 
@@ -91,7 +93,7 @@ if(v.fails()) {
     v = validator.make(data, rules);
     v.mergeMessage(messages);
     if(v.fails()) {
-      console.log(v.messages);
+      console.log(v.errors());
     }
 
     //------------------------------------------
@@ -118,7 +120,7 @@ if(v.fails()) {
   v.mergeAttribute(attributes);
 
   if(v.fails()) {
-    console.log(v.messages);
+    console.log(v.messages());
   }
 
   //------------------------------------------
