@@ -55,7 +55,7 @@ describe('Validator', function(){
       var input = [
         {username: ''}
       ]
-      var v = Validator.make({}, rules);
+      var v = Validator.make(input, rules);
       assert.equal(false, v.passes());
     });
  
@@ -66,7 +66,7 @@ describe('Validator', function(){
       var input = {
         username: ''
       }
-      var v = Validator.make({}, rules);
+      var v = Validator.make(input, rules);
       assert.equal(false, v.passes());
     });
  
@@ -77,8 +77,8 @@ describe('Validator', function(){
       var input = {
         username: '00'
       }
-      var v = Validator.make({}, rules);
-      assert.equal(false, v.passes());
+      var v = Validator.make(input, rules);
+      assert.equal(true, v.passes());
     });
  
     it('验证失败（null）', function() {
@@ -88,7 +88,7 @@ describe('Validator', function(){
       var input = {
         username: null
       }
-      var v = Validator.make({}, rules);
+      var v = Validator.make(input, rules);
       assert.equal(false, v.passes());
     });
  
@@ -99,7 +99,7 @@ describe('Validator', function(){
       var input = {
         username: undefined
       }
-      var v = Validator.make({}, rules);
+      var v = Validator.make(input, rules);
       assert.equal(false, v.passes());
     });
   
@@ -110,7 +110,7 @@ describe('Validator', function(){
       var input = {
         username: 0
       }
-      var v = Validator.make({}, rules);
+      var v = Validator.make(input, rules);
       assert.equal(false, v.passes());
     });
 
