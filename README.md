@@ -1,4 +1,4 @@
-validator.js [![Build Status](https://travis-ci.org/overtrue/mod-validator.png)](https://travis-ci.org/joychao/mod-validator)
+validator.js [![Build Status](https://travis-ci.org/overtrue/validator.js.png)](https://travis-ci.org/joychao/mod-validator)
 ============
 
 一个类似laravel的js验证模块.
