@@ -53,8 +53,8 @@ if(v.fails()) {
 ### API
  - 获取验证结果
    + 语法：
-     + `{Boolean}` Validator.passes() 是否通过
-     + `{Boolean}` Validator.fails() 是否验证失败
+     + `{Boolean}` `Validator.passes()` 是否通过
+     + `{Boolean}` `Validator.fails()` 是否验证失败
    + 举例：
    ```javascript
     var rules = {
@@ -79,9 +79,9 @@ if(v.fails()) {
    ```
 
  - 自定义错误消息
-   + 语法：`{Void}` Validator.mergeMessage(attribute [, message]) 
-      - Validator.mergeMessage({attributeName, message})
-      - Validator.mergeMessage('attributeName', 'message')
+   + 语法：`{Void}` `Validator.mergeMessage(attribute [, message])`
+      - `Validator.mergeMessage({attributeName, message})`
+      - `Validator.mergeMessage('attributeName', 'message')`
    + 属性替换：在消息字符串用使用`:attribute` 作为属性名占位符。
    + 举例：
     ```javascript
@@ -105,9 +105,9 @@ if(v.fails()) {
 
 
 - 自定义属性别名
-  + 语法：`{Void}` Validator.mergeAttribute(attribute [, alias]) 
-    + Validator.mergeAttribute({attributeName, alias})
-    + Validator.mergeAttribute('attributeName', 'alias')
+  + 语法：`{Void}` `Validator.mergeAttribute(attribute [, alias])`
+    + `Validator.mergeAttribute({attributeName, alias})`
+    + `Validator.mergeAttribute('attributeName', 'alias')`
   + 举例：
 
   ```javascript
