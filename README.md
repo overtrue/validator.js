@@ -1,13 +1,23 @@
-mod-validator [![Build Status](https://travis-ci.org/overtrue/mod-validator.png)](https://travis-ci.org/joychao/mod-validator)
+validator.js [![Build Status](https://travis-ci.org/overtrue/mod-validator.png)](https://travis-ci.org/joychao/mod-validator)
 ============
 
 一个类似laravel的js验证模块.
 
 ## 安装
 
-```javascript
-$ npm install mod-validator
-```
+1. 在Nodejs使用
+
+  ```javascript
+  $ npm install mod-validator
+  ```
+
+2. 浏览器里使用
+
+  下载本项目`lib/validator.js` 到您的项目目录,引入即可:
+
+  ```
+  <script src="path/to/validator.js"></script>
+  ```
 
 ## 基本用法
 ```javascript
@@ -130,7 +140,7 @@ if(v.fails()) {
   v.mergeAttribute('username', '用户名');
   ```
 
-###custom value alias
+### 自定义值别名
 //TODO
 
 #License
