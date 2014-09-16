@@ -9,17 +9,18 @@
   "devDependencies": { "mocha": "*" },
   "repository": {
     "type": "git",
-    "url": "https://github.com/joychao/mod-validator.git"
+    "url": "https://github.com/overtrue/validator.js.git"
   },
   "keywords": [
     "validation",
+    "validator",
     "laravel"
   ],
-  "author": "Joy",
+  "author": "Carlos",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/joychao/mod-validator/issues"
+    "url": "https://github.com/overtrue/validator.js/issues"
   },
-  "homepage": "https://github.com/joychao/mod-validator",
+  "homepage": "https://github.com/overtrue/validator.js",
   "readmeFilename": "README.md"
 }
