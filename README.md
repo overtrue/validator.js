@@ -81,11 +81,11 @@ if(v.fails()) {
 
     if (v.passes()) {
       // 如果全部通过验证
-    } 
+    }
     // 或者
     if (v.fails()) {
       // 如果没通过验证
-    } 
+    }
    ```
 
  - 自定义错误消息
@@ -108,7 +108,7 @@ if(v.fails()) {
 
     //------------------------------------------
 
-    v.mergeMessage({required: ':attribute 不能为空.'}) 
+    v.mergeMessage({required: ':attribute 不能为空.'})
     //以上用法等同于：
     v.mergeMessage('required', ':attribute 不能为空.');
     ```
@@ -135,13 +135,11 @@ if(v.fails()) {
 
   //------------------------------------------
 
-  v.mergeAttribute({username: '用户名'}) 
+  v.mergeAttribute({username: '用户名'})
   // 以上等同于：
   v.mergeAttribute('username', '用户名');
   ```
 
-### 自定义值别名
-//TODO
 
 #License
 
