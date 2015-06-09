@@ -1,7 +1,7 @@
 {
   "name": "mod-validator",
-  "version": "0.0.8",
-  "description": "a js validation module inspired by laravel validation.",
+  "version": "0.0.9",
+  "description": "A js validation module inspired by laravel validation.",
   "main": "index.js",
   "scripts": {
     "test": "mocha"
