@@ -1,0 +1,19 @@
+<script src="lib/validator.js"></script>
+
+<script>
+    var rules = {
+        username: "required|min:5"
+    };
+
+    var data = {
+        username:'abc',
+    };
+
+    var v = Validator.make(data, rules); // 或者: var  v = new Validator(data, rules)
+
+    if(v.fails()) {
+      console.log(v.messages());
+      //or
+      console.log(v.errors());
+    }
+</script>
