@@ -21,7 +21,7 @@ validator.js [![Build Status](https://travis-ci.org/overtrue/validator.js.png)](
 
 ## 基本用法
 ```javascript
-var Validator = require("validator");
+var Validator = require("validator");// 浏览器就不用这句了，Validator是全局变量
 var rules = {
   username: 'required|min:5',
   password: 'required|confirmed|min:6|max:16',
