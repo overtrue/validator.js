@@ -3,6 +3,8 @@ validator.js [![Build Status](https://travis-ci.org/overtrue/validator.js.png)](
 
 一个类似laravel的js验证模块.
 
+> 🚨 此库不再维护，建议使用更全面的 [skaterdav85/validatorjs](https://github.com/skaterdav85/validatorjs)
+
 ## 安装
 
 1. 在Nodejs使用
